@@ -1,8 +1,8 @@
 Dependencies for Project 'MyDemo', Target 'MyDemo': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (..\Drivers\CMSIS\GD\GD32F3x0\Source\ARM\startup_gd32f3x0.s)(0x622AE157)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "GD32F310 SETA 1"--list .\listings\startup_gd32f3x0.lst --xref -o .\objects\startup_gd32f3x0.o --depend .\objects\startup_gd32f3x0.d)
-F (..\Core\Src\main.c)(0x62455FE9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+F (..\Core\Src\main.c)(0x6245D20B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -34,7 +34,8 @@ I (..\Core\Src\systick.h)(0x622AE149)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -42,9 +43,10 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
-F (..\Core\Src\gd32f3x0_it.c)(0x6245565B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_it.o --omf_browse .\objects\gd32f3x0_it.crf --depend .\objects\gd32f3x0_it.d)
+I (..\Core\Inc\gpio.h)(0x6245CD27)
+F (..\Core\Src\gd32f3x0_it.c)(0x6245565B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_it.o --omf_browse .\objects\gd32f3x0_it.crf --depend .\objects\gd32f3x0_it.d)
 I (..\Core\Inc\gd32f3x0_it.h)(0x622AE149)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -73,8 +75,8 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
 I (..\Core\Src\systick.h)(0x622AE149)
-F (..\Core\Src\systick.c)(0x622AE149)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+F (..\Core\Src\systick.c)(0x622AE149)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -103,9 +105,41 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
 I (..\Core\Src\systick.h)(0x622AE149)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_adc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_adc.o --omf_browse .\objects\gd32f3x0_adc.crf --depend .\objects\gd32f3x0_adc.d)
+F (..\Core\Src\gpio.c)(0x6245CD19)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\Core\Inc\gpio.h)(0x6245CD27)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_adc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_adc.o --omf_browse .\objects\gd32f3x0_adc.crf --depend .\objects\gd32f3x0_adc.d)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -132,10 +166,10 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_cec.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_cec.o --omf_browse .\objects\gd32f3x0_cec.crf --depend .\objects\gd32f3x0_cec.d)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_cmp.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_cmp.o --omf_browse .\objects\gd32f3x0_cmp.crf --depend .\objects\gd32f3x0_cmp.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_cec.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_cec.o --omf_browse .\objects\gd32f3x0_cec.crf --depend .\objects\gd32f3x0_cec.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_cmp.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_cmp.o --omf_browse .\objects\gd32f3x0_cmp.crf --depend .\objects\gd32f3x0_cmp.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_cmp.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -163,9 +197,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_crc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_crc.o --omf_browse .\objects\gd32f3x0_crc.crf --depend .\objects\gd32f3x0_crc.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_crc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_crc.o --omf_browse .\objects\gd32f3x0_crc.crf --depend .\objects\gd32f3x0_crc.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -192,9 +226,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_ctc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_ctc.o --omf_browse .\objects\gd32f3x0_ctc.crf --depend .\objects\gd32f3x0_ctc.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_ctc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_ctc.o --omf_browse .\objects\gd32f3x0_ctc.crf --depend .\objects\gd32f3x0_ctc.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -221,10 +255,10 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_dac.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_dac.o --omf_browse .\objects\gd32f3x0_dac.crf --depend .\objects\gd32f3x0_dac.d)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_dbg.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_dbg.o --omf_browse .\objects\gd32f3x0_dbg.crf --depend .\objects\gd32f3x0_dbg.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_dac.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_dac.o --omf_browse .\objects\gd32f3x0_dac.crf --depend .\objects\gd32f3x0_dac.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_dbg.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_dbg.o --omf_browse .\objects\gd32f3x0_dbg.crf --depend .\objects\gd32f3x0_dbg.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -251,9 +285,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_dma.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_dma.o --omf_browse .\objects\gd32f3x0_dma.crf --depend .\objects\gd32f3x0_dma.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_dma.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_dma.o --omf_browse .\objects\gd32f3x0_dma.crf --depend .\objects\gd32f3x0_dma.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -280,9 +314,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_exti.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_exti.o --omf_browse .\objects\gd32f3x0_exti.crf --depend .\objects\gd32f3x0_exti.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_exti.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_exti.o --omf_browse .\objects\gd32f3x0_exti.crf --depend .\objects\gd32f3x0_exti.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -309,9 +343,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_fmc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_fmc.o --omf_browse .\objects\gd32f3x0_fmc.crf --depend .\objects\gd32f3x0_fmc.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_fmc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_fmc.o --omf_browse .\objects\gd32f3x0_fmc.crf --depend .\objects\gd32f3x0_fmc.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -338,9 +372,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_fwdgt.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_fwdgt.o --omf_browse .\objects\gd32f3x0_fwdgt.crf --depend .\objects\gd32f3x0_fwdgt.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_fwdgt.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_fwdgt.o --omf_browse .\objects\gd32f3x0_fwdgt.crf --depend .\objects\gd32f3x0_fwdgt.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -367,9 +401,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_gpio.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_gpio.o --omf_browse .\objects\gd32f3x0_gpio.crf --depend .\objects\gd32f3x0_gpio.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_gpio.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_gpio.o --omf_browse .\objects\gd32f3x0_gpio.crf --depend .\objects\gd32f3x0_gpio.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -396,9 +430,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_i2c.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_i2c.o --omf_browse .\objects\gd32f3x0_i2c.crf --depend .\objects\gd32f3x0_i2c.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_i2c.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_i2c.o --omf_browse .\objects\gd32f3x0_i2c.crf --depend .\objects\gd32f3x0_i2c.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -425,9 +459,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_misc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_misc.o --omf_browse .\objects\gd32f3x0_misc.crf --depend .\objects\gd32f3x0_misc.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_misc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_misc.o --omf_browse .\objects\gd32f3x0_misc.crf --depend .\objects\gd32f3x0_misc.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -454,9 +488,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_pmu.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_pmu.o --omf_browse .\objects\gd32f3x0_pmu.crf --depend .\objects\gd32f3x0_pmu.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_pmu.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_pmu.o --omf_browse .\objects\gd32f3x0_pmu.crf --depend .\objects\gd32f3x0_pmu.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -483,9 +517,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_rcu.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_rcu.o --omf_browse .\objects\gd32f3x0_rcu.crf --depend .\objects\gd32f3x0_rcu.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_rcu.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_rcu.o --omf_browse .\objects\gd32f3x0_rcu.crf --depend .\objects\gd32f3x0_rcu.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -512,9 +546,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_rtc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_rtc.o --omf_browse .\objects\gd32f3x0_rtc.crf --depend .\objects\gd32f3x0_rtc.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_rtc.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_rtc.o --omf_browse .\objects\gd32f3x0_rtc.crf --depend .\objects\gd32f3x0_rtc.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -541,9 +575,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_spi.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_spi.o --omf_browse .\objects\gd32f3x0_spi.crf --depend .\objects\gd32f3x0_spi.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_spi.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_spi.o --omf_browse .\objects\gd32f3x0_spi.crf --depend .\objects\gd32f3x0_spi.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -570,9 +604,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_syscfg.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_syscfg.o --omf_browse .\objects\gd32f3x0_syscfg.crf --depend .\objects\gd32f3x0_syscfg.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_syscfg.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_syscfg.o --omf_browse .\objects\gd32f3x0_syscfg.crf --depend .\objects\gd32f3x0_syscfg.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -599,9 +633,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_timer.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_timer.o --omf_browse .\objects\gd32f3x0_timer.crf --depend .\objects\gd32f3x0_timer.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_timer.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_timer.o --omf_browse .\objects\gd32f3x0_timer.crf --depend .\objects\gd32f3x0_timer.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -628,9 +662,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_tsi.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_tsi.o --omf_browse .\objects\gd32f3x0_tsi.crf --depend .\objects\gd32f3x0_tsi.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_tsi.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_tsi.o --omf_browse .\objects\gd32f3x0_tsi.crf --depend .\objects\gd32f3x0_tsi.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -657,9 +691,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_usart.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_usart.o --omf_browse .\objects\gd32f3x0_usart.crf --depend .\objects\gd32f3x0_usart.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_usart.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_usart.o --omf_browse .\objects\gd32f3x0_usart.crf --depend .\objects\gd32f3x0_usart.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -686,9 +720,9 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_wwdgt.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_wwdgt.o --omf_browse .\objects\gd32f3x0_wwdgt.crf --depend .\objects\gd32f3x0_wwdgt.d)
+F (..\Drivers\GD32F3x0_standard_peripheral\Source\gd32f3x0_wwdgt.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\gd32f3x0_wwdgt.o --omf_browse .\objects\gd32f3x0_wwdgt.crf --depend .\objects\gd32f3x0_wwdgt.d)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -715,8 +749,8 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Drivers\CMSIS\GD\GD32F3x0\Source\system_gd32f3x0.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\system_gd32f3x0.o --omf_browse .\objects\system_gd32f3x0.crf --depend .\objects\system_gd32f3x0.d)
-I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x622AE156)
+F (..\Drivers\CMSIS\GD\GD32F3x0\Source\system_gd32f3x0.c)(0x622AE157)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\system_gd32f3x0.o --omf_browse .\objects\system_gd32f3x0.crf --depend .\objects\system_gd32f3x0.d)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
 I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
@@ -744,12 +778,40 @@ I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
 I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\croutine.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\croutine.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -758,13 +820,41 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x61C2EEAA
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\croutine.h)(0x61C2EEAA)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
 I (D:\keil5\keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -774,27 +864,83 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h)(0x61C2EEAA)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\list.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\list.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
 I (D:\keil5\keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\queue.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\queue.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
 I (D:\keil5\keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\keil5\keil\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -803,13 +949,41 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x61C2EEAA
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h)(0x61C2EEAA)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\stream_buffer.o --omf_browse .\objects\stream_buffer.crf --depend .\objects\stream_buffer.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\stream_buffer.o --omf_browse .\objects\stream_buffer.crf --depend .\objects\stream_buffer.d)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -818,14 +992,42 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x61C2EEAA
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\stream_buffer.h)(0x61C2EEAA)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\tasks.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\tasks.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
 I (D:\keil5\keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\keil5\keil\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -836,13 +1038,41 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\stack_macros.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\timers.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\timers.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
 I (D:\keil5\keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -852,13 +1082,41 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h)(0x61C2EEAA)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
 I (D:\keil5\keil\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)
@@ -866,12 +1124,40 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x61C2EEAA)
-F (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c)(0x61C2EEAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+F (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c)(0x6245C267)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\BSP -I ..\Core\Inc -I ..\Drivers\GD32F3x0_standard_peripheral\Include -I ..\Drivers\CMSIS\GD\GD32F3x0\Include -I ..\Middlewares\Third_Party\FreeRTOS\Source\include -I ..\User -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I ..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang -I ..\Drivers\CMSIS -I ..\BSP-ID:\keil5\Packs\GigaDevice\GD32F3x0_DFP\3.0.0\Device\Include-D__UVISION_VERSION="536" -DGD32F310 -DUSE_STDPERIPH_DRIVER -DGD32F310-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x61C2EEAA)
 I (D:\keil5\keil\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (D:\keil5\keil\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x62456253)
-I (..\Core\Inc\main.h)(0x624552E4)
+I (..\Core\Inc\main.h)(0x6245C14C)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\gd32f3x0.h)(0x6245C402)
+I (..\Drivers\CMSIS\core_cm4.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmInstr.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cmFunc.h)(0x622AE157)
+I (..\Drivers\CMSIS\core_cm4_simd.h)(0x622AE157)
+I (..\Drivers\CMSIS\GD\GD32F3x0\Include\system_gd32f3x0.h)(0x622AE156)
+I (..\Core\Inc\gd32f3x0_libopt.h)(0x622AE149)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_adc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_crc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_ctc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dbg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_dma.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_exti.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fmc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_gpio.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_syscfg.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_i2c.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_fwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_pmu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rcu.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_rtc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_spi.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_timer.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_usart.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_wwdgt.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_misc.h)(0x622AE157)
+I (..\Drivers\GD32F3x0_standard_peripheral\Include\gd32f3x0_tsi.h)(0x622AE157)
+I (..\BSP\struct_typedef.h)(0x6245C218)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x61C2EEAA)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x61C2EEAA)

@@ -110,7 +110,7 @@ extern "C" {
     /* configuration of the Cortex-M4 processor and core peripherals */
 #define __CM4_REV                 0x0001   /*!< Core revision r0p1                                       */
 #define __MPU_PRESENT             0U       /*!< GD32F3x0 do not provide MPU                              */
-#define __NVIC_PRIO_BITS          4U       /*!< GD32F3x0 uses 4 bits for the priority levels             */
+#define __NVIC_PRIO_BITS          4       /*!< GD32F3x0 uses 4 bits for the priority levels             */
 #define __Vendor_SysTickConfig    0U       /*!< set to 1 if different sysTick config is used             */
 #define __FPU_PRESENT             1U       /*!< FPU present                                              */
 
