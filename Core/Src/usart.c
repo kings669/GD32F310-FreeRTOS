@@ -20,6 +20,9 @@ void My_Usart_Init(void)
 	usart_receive_config(usart0.usart_periph,USART_RECEIVE_ENABLE);
 	usart_transmit_config(usart0.usart_periph,USART_TRANSMIT_ENABLE);
 	usart_enable(usart0.usart_periph);
+	usart_interrupt_enable(usart0.usart_periph, USART_INT_RBNE);
+	usart_interrupt_enable(usart0.usart_periph, USART_INT_ERR);
+	nvic_irq_enable(USART0_IRQn,0,0);
 }
 
 void My_Usart_MspInit(void)
