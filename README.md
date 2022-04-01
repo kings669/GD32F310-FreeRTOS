@@ -21,6 +21,7 @@ RTOS：**FreeRTOS v202112.00**
 *此处将会在极术社区发布* 
 
 - [【GD32F310开发板试用】GD32F310移植FreeRTOS](https://aijishu.com/a/1060000000314175) 
+- [【GD32F310开发板试用】GD32F310串口输出及Printf映射](https://aijishu.com/a/1060000000314295) 
 
 ## 相关仓库及资源
 
