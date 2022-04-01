@@ -68,9 +68,9 @@ void task1_task(void *pvParameters)
 	while(1)
 	{
 		gpio_bit_write(GPIOA, GPIO_PIN_8, SET);
-    vTaskDelay(500);
+    vTaskDelay(1000);
 		gpio_bit_write(GPIOA, GPIO_PIN_8, RESET);		
-		vTaskDelay(500);
+		vTaskDelay(1000);
 	}
 }
 
