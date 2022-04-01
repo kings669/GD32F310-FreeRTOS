@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,GD32F310</Define>
               <Undefine></Undefine>
-              <IncludePath>..\BSP;..\Core\Inc;..\Drivers\GD32F3x0_standard_peripheral\Include;..\Drivers\CMSIS\GD\GD32F3x0\Include;..\Middlewares\Third_Party\FreeRTOS\Source\include;..\User;..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F;..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang;..\Drivers\CMSIS;..\BSP</IncludePath>
+              <IncludePath>..\BSP;..\Core\Inc;..\Drivers\GD32F3x0_standard_peripheral\Include;..\Drivers\CMSIS\GD\GD32F3x0\Include;..\Middlewares\Third_Party\FreeRTOS\Source\include;..\User;..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F;..\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang;..\Drivers\CMSIS;..\BSP;..\User\Task</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -602,9 +602,23 @@
         </Group>
         <Group>
           <GroupName>Application/BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\bsp_led.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>User/Task</GroupName>
+          <Files>
+            <File>
+              <FileName>start_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Task\start_task.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
