@@ -4,6 +4,7 @@
 ".\objects\gd32f3x0_it.o"
 ".\objects\systick.o"
 ".\objects\gpio.o"
+".\objects\usart.o"
 ".\objects\gd32f3x0_adc.o"
 ".\objects\gd32f3x0_cec.o"
 ".\objects\gd32f3x0_cmp.o"
@@ -38,6 +39,7 @@
 ".\objects\heap_4.o"
 ".\objects\port.o"
 ".\objects\bsp_led.o"
+".\objects\bsp_usart.o"
 ".\objects\start_task.o"
 --library_type=microlib --strict --scatter ".\Objects\MyDemo.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

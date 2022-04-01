@@ -1,6 +1,7 @@
 #include "start_task.h"
 
 #include "bsp_led.h"
+#include "bsp_usart.h"
 
 //任务优先级
 #define START_TASK_PRIO		1
@@ -11,15 +12,15 @@ TaskHandle_t StartTask_Handler;
 //任务函数
 void start_task(void *pvParameters);
 
-#define LED_TASK_PRIO		2
+#define LED_TASK_PRIO		10
 #define LED_STK_SIZE 		128  
 TaskHandle_t LEDTask_Handler;
 void led_task(void *pvParameters);
 
-#define TASK2_TASK_PRIO		3	
-#define TASK2_STK_SIZE 		128  
-TaskHandle_t Task2Task_Handler;
-void task2_task(void *pvParameters);
+#define USART0_TASK_PRIO		6	
+#define USART0_STK_SIZE 		128  
+TaskHandle_t USART0Task_Handler;
+void usart0_task(void *pvParameters);
 
 
 //在mian函数中调用
@@ -42,7 +43,14 @@ void start_task(void *pvParameters)
                 (uint16_t       )LED_STK_SIZE,        
                 (void*          )NULL,                  
                 (UBaseType_t    )LED_TASK_PRIO,        
-                (TaskHandle_t*  )&LEDTask_Handler);   
+                (TaskHandle_t*  )&LEDTask_Handler); 
+								
+		xTaskCreate((TaskFunction_t )usart0_task,             
+                (const char*    )"usart0_task",           
+                (uint16_t       )USART0_STK_SIZE,        
+                (void*          )NULL,                  
+                (UBaseType_t    )USART0_TASK_PRIO,        
+                (TaskHandle_t*  )&USART0Task_Handler); 
 				
     vTaskDelete(StartTask_Handler); //删除开始任务
 				
@@ -55,5 +63,14 @@ void led_task(void *pvParameters)
 	{
     vTaskDelay(500);
 		led_toggle();
+	}
+}
+
+void usart0_task(void *pvParameters)
+{
+	while(1)
+	{
+		vTaskDelay(100);
+		usart0_printf("Hello,GD32!\r\n");
 	}
 }

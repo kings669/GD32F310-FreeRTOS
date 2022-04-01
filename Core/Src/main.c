@@ -5,6 +5,7 @@
 #include "task.h"
 
 #include "gpio.h"
+#include "usart.h"
 #include "start_task.h"
 
 /*!
@@ -19,7 +20,8 @@ int main(void)
     systick_config();
 		//User Init
 		My_GPIO_Init();
-
+		My_Usart_MspInit();
+		My_Usart_Init();
 		//startTask
 		startTask();
 		//任务调度

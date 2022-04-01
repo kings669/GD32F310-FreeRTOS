@@ -413,6 +413,11 @@
               <FileType>1</FileType>
               <FilePath>..\Core\Src\gpio.c</FilePath>
             </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\usart.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -607,6 +612,11 @@
               <FileName>bsp_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\bsp_usart.c</FilePath>
             </File>
           </Files>
         </Group>
