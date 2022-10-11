@@ -27,10 +27,10 @@ RTOS：**FreeRTOS v202112.00**
 
 ## Relevant Repositories and Resources
 
-- [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS) —— 一个迷你操作系统内核的小型嵌入式系统
-- [GD32F3x0 Firmware Library](http://www.gd32mcu.com/cn/download/7?kw=GD32F3)) —— GD32Fx0系列固件库
-- [GD32F3x0系列MCU固件库使用指南](http://www.gd32mcu.com/download/down/document_id/217/path_type/2)——使用指南，可以参考配置
-- [其他资源](https://aijishu.com/a/1060000000306188)——可以前往极术社区
+- [FreeRTOS](https://github.com/FreeRTOS/FreeRTOS) —— A small embedded system with a mini operating system kernel
+- [GD32F3x0 Firmware Library](http://www.gd32mcu.com/cn/download/7?kw=GD32F3)) —— GD32Fx0 series firmware library
+- [GD32F3x0 series MCU firmware library usage guide](http://www.gd32mcu.com/download/down/document_id/217/path_type/2)——User guide, you can refer to the configuration
+- [Other resources](https://aijishu.com/a/1060000000306188)——You can go to the Jishu community
 
 ## Maintainer
 
@@ -39,7 +39,7 @@ RTOS：**FreeRTOS v202112.00**
 ## How to contribute
 
 You are very welcome to join us!
-[new an issue](https://github.com/kings669/GD32F310-FreeRTOS/issues) 或者[Pull Request](https://github.com/kings669/GD32F310-FreeRTOS/pulls)。
+[new an issue](https://github.com/kings669/GD32F310-FreeRTOS/issues) or [Pull Request](https://github.com/kings669/GD32F310-FreeRTOS/pulls)。
 
 ## License
 
